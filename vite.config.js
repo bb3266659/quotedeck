@@ -7,7 +7,7 @@ const base = process.env.VITE_BASE || '/'
 
 export default defineConfig({
   base, '/quotedeck/',
-  plugins: [
+  plugins: [react()],
     react(),
     VitePWA({
       registerType: 'autoUpdate',

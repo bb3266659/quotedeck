@@ -3,11 +3,9 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // GitHub Pages (project site) จะถูกตั้งค่าอัตโนมัติจาก workflow
-const base = process.env.VITE_BASE || '/'
-
 export default defineConfig({
-  base, '/quotedeck/',
-  plugins: [react()],
+  base: '/quotedeck/',
+  plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',

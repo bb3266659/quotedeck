@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // GitHub Pages (project site) จะถูกตั้งค่าอัตโนมัติจาก workflow
 export default defineConfig({
-  base = '/quotedeck/',
+  base: '/quotedeck/',
   plugins: [
     react(),
     VitePWA({
